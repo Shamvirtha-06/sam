@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                padding-bottom: 200px;
+                padding-top: 250px;
+                padding-left: 100px;
+                padding-right: 100px;
+                text-align: center;
+                background-color: burlywood;
+            }
+        </style>
+    </head>
+    <body>
+        num1:
+        <input type="textbox" id="1">
+        num2:
+        <input type="textbox" id="2">
+        <br><br>
+        <input type="button" value="ADD" onclick="sum()"> 
+        <input type="button"value="SUB" onclick="sub()">
+        <input type="button"value="MUL" onclick="mul()">
+        <input type="button"value="DIV" onclick="div()">
+        <br><br>
+        Result:<input type="text" id="res">
+        <script>
+            function sum(){
+                var a=document.getElementById("1").value;
+                var b=document.getElementById("2").value;
+                document.getElementById("res").value=parseInt(a)+parseInt(b);
+            }
+            function sub(){
+                var a=document.getElementById("1").value;
+                var b=document.getElementById("2").value;
+                document.getElementById("res").value=parseInt(a)-parseInt(b);
+            }
+            function mul(){
+                var a=document.getElementById("1").value;
+                var b=document.getElementById("2").value;
+                document.getElementById("res").value=parseInt(a)*parseInt(b);
+            }
+            function div(){
+                var a=document.getElementById("1").value;
+                var b=document.getElementById("2").value;
+                document.getElementById("res").value=parseInt(a)/parseInt(b);
+            }
+        </script>
+    </body>
+</html>
